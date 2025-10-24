@@ -32,7 +32,7 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          GITHUB_ACTIONS: true
+          NODE_ENV: production
 
       - name: Move 404 to root
         run: mv ./out/404/index.html ./out/404.html
